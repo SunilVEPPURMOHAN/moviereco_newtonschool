@@ -1,8 +1,8 @@
 
 const data = {
 apikey: 'c678a6a6',
-url: 'http://www.omdbapi.com/?t=',
-searchurl: 'http://www.omdbapi.com/?s=',
+url: 'https://www.omdbapi.com/?t=',
+searchurl: 'https://www.omdbapi.com/?s=',
 sunilChoice: {
     Horror: ["Psycho",
      "The Shining",

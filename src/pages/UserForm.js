@@ -3,8 +3,6 @@ import { useState } from "react";
 import Axios from "axios";
 import data from '../components/data/data';
 import Movie from "../components/Movie";
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Navb from "../components/Navb";
 

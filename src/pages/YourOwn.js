@@ -17,7 +17,6 @@ const YourOwn = ()=>{
   const[caution,setCaution] = useState('Key in your user name');
   const[movielist,setMovielist] = useState({Horror:[],Action:[],Drama:[],War:[],SciFiction:[]});
 
-  var movies = Object.keys(movielist);
   function OnClickHandler(item) {
     setgenre(item);
   }
@@ -28,7 +27,6 @@ setCaution("user doesn't exist");
     }
     else  {
     setMovielist(JSON.parse(localStorage.getItem(user)));
-    movies = Object.keys(movielist);
   }
   },[user]);
 
@@ -47,7 +45,7 @@ setCaution("user doesn't exist");
           <em>Select a genre to get started </em>
         </h4>
         <div>
-          {movies.map((item) => (
+          {['Horror','Action','Drama','War','SciFiction'].map((item) => (
             <Button className="btn-danger btn-lg" onClick={() => OnClickHandler(item)}>
               {item}
             </Button>

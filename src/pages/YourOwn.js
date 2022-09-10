@@ -39,7 +39,7 @@ setCaution("user doesn't exist");
        <h1>{caution}</h1>
        <input type="text" value={user} onChange={(event)=>setUser(event.target.value)}></input>
        {/* <Button onClick={handleClick}>Change user</Button> */}
-      <h1 className="display-4" style={{padding: 30}}>{userGenre}'s movie recommendations for you!</h1>
+      <h1 className="display-4" style={{padding: 30}}>{user}'s movie recommendations for you!</h1>
       <hr />
       <div className="bgm1">
         <h4 style={{ color: "white " }}>

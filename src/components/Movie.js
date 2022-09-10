@@ -19,7 +19,7 @@ const Movie = (props)=>{
     <Card className="flex-fill" title={movie.Title}>
   <Card.Img variant="top" src={movie.Poster} title={movie.Title}/>  
   <Card.Body title={movie.Title}>  
-    <Card.Title title={movie.Title}>{movie.Title}({movie.Year})</Card.Title>  
+    <Card.Title title={movie.Title}>{movie.Title} ({movie.Year})</Card.Title>  
     <Card.Subtitle className="mb-2 text-muted" title={movie.Title}>{movie.Language} | {movie.Director}</Card.Subtitle>
   <Card.Text title={movie.Title}>  
    IMDB {movie.imdbRating} | Metascore {movie.Metascore}

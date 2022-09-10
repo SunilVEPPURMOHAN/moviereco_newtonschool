@@ -48,7 +48,7 @@ useEffect(()=>{
      return(<>
      <Navb/>
     <h1>{caution}</h1>
-      <input type="text" value={text} onChange={searchText}></input>
+      <input type="text" value={text} onChange={searchText} placeholder='Search your movie here'></input>
       <label>Choose a Genre:
   <select value={genr} onChange={(event)=>setGenr(event.target.value)}>
     <option value="Horror">Horror</option>
@@ -59,7 +59,7 @@ useEffect(()=>{
   </select>
   </label>
 
-  <input type="text" value={user} onChange={(event)=>setUser(event.target.value)}></input>
+  <input type="text" value={user} onChange={(event)=>setUser(event.target.value)} placeholder="type your user name here"></input>
   <Button className="btn-success btn-outline-success my-2 my-sm-0"> <Link to={"/"+user}>All Yours! </Link></Button>
  
 

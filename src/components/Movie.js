@@ -4,7 +4,6 @@ import Axios from "axios";
 import data from './data/data.js';
 import { useState } from "react";
 import { useEffect } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
 const Movie = (props)=>{

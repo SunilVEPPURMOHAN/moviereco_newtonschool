@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import Navb from "../components/Navb";
 
 
-export default function(){
+const UserForm = ()=>{
 
   const[text,setText] = useState('');
   const[genr,setGenr] = useState('Horror');
@@ -20,7 +20,7 @@ export default function(){
 
 useEffect(()=>{
   if (localStorage.getItem(user) !== null) setMovielist(JSON.parse(localStorage.getItem(user)));
-},[]);
+},[user]);
 
 
   const searchText = async (event)=>{
@@ -60,7 +60,7 @@ useEffect(()=>{
   </label>
 
   <input type="text" value={user} onChange={(event)=>setUser(event.target.value)}></input>
-  <Button className="success"> <Link to={"/"+user}>All Yours! </Link></Button>
+  <Button className="btn-success btn-outline-success my-2 my-sm-0"> <Link to={"/"+user}>All Yours! </Link></Button>
  
 
   <div className="d-flex container-fluid" style={{flexWrap: "wrap", justifyContent: "space-around"}}>
@@ -71,3 +71,5 @@ useEffect(()=>{
   </>
 );
 };
+
+export default UserForm;

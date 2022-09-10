@@ -9,7 +9,7 @@ import Navb from "../components/Navb";
 
 const Home = ()=>{
   let {id} = useParams();
-  if (id=='') id = 'sunil';
+  if (id==='') id = 'sunil';
   if(localStorage.getItem(id)===null) id = 'sunil';
 
   const [userGenre, setgenre] = useState("Horror");

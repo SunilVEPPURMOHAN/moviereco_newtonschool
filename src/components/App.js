@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "react-bootstrap";
 import data from './data/data.js';
 import Home from "../pages/Home";
 import UserForm from "../pages/UserForm";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Error from '../pages/Error';
-import Navb from "./Navb";
 
 const MovieDatabase = data.sunilChoice;
 

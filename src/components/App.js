@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import UserForm from "../pages/UserForm";
 import { Route, Routes } from "react-router-dom";
 import Error from '../pages/Error';
+import YourOwn from "../pages/YourOwn";
 
 const MovieDatabase = data.sunilChoice;
 
@@ -18,7 +19,7 @@ export default function App() {
   <Routes>
   <Route path="/" element={<Home/>} />
   <Route path="/makeItYours" element={<UserForm/>} />
-  <Route path="/:id" element={<Home/>} />
+  <Route path="/YourOwn" element={<YourOwn/>} />
   <Route component={<Error/>} />
   </Routes>
       {/* <Home datum={MovieDatabase} name="Sunil"/> */}

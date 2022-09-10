@@ -51,7 +51,7 @@ const Home = ()=>{
 
       <div className="d-flex container-fluid" style={{flexWrap: "wrap", justifyContent: "space-around"}}>
       {MovieDatabase[userGenre].map((xxx) =>
-      <Movie movie={xxx} />)}movie
+      <Movie movie={xxx} />)}
       </div>
    </div>
     

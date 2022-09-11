@@ -60,8 +60,9 @@ useEffect(()=>{
     <option value="SciFiction">SciFiction</option>
   </select>
   </label></div>
+  <div className="centerAlign">
   <input type="text" value={user} onChange={(event)=>setUser(event.target.value)} placeholder="type your user name here"></input>
-  {/* <Button className="btn-success btn-outline-success my-2 my-sm-0"> <Link to={"/"+user}>All Yours! </Link></Button> */}
+  {/* <Button className="btn-success btn-outline-success my-2 my-sm-0"> <Link to={"/"+user}>All Yours! </Link></Button> */}</div>
   </div>
 
   <div className="d-flex container-fluid" style={{flexWrap: "wrap", justifyContent: "space-around"}}>

@@ -63,7 +63,7 @@ h1 {
     font-weight: bold;
     margin-top: 1px;
     margin-bottom: 1px;
-    background-color:#06045e;
+    background-color:#021d03;
 text-align: center;
 text-transform: capitalize;
 }
@@ -74,13 +74,16 @@ h2{
 
 .Nav{
   text-align: center;
+  padding: 0.5%%;
 }
 .inputBox{
  text-align: center;
+ padding: 0.5%;
 }
 
 .centerAlign{
   text-align: center;
+  padding: 0.5%;
 }
 
 #root{

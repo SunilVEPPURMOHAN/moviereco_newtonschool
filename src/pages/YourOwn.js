@@ -35,11 +35,12 @@ setCaution("user doesn't exist");
    
     <div className="App">
        <Navb/>
-       <h1>{caution}</h1>
+       <h2>{caution}</h2>
+       <div className="inputUser">
        <label>Enter your username
        <input type="text" value={user} onChange={(event)=>setUser(event.target.value)}></input>
-       {/* <Button onClick={handleClick}>Change user</Button> */}</label>
-      <h1 className="display-4" style={{padding: 30}}>movie recommendations for you!</h1>
+       {/* <Button onClick={handleClick}>Change user</Button> */}</label></div>
+      <h1 className="display-5" style={{padding: 30}}>movie recommendations for you!</h1>
       <hr />
       <div className="bgm1">
         <h4 style={{ color: "white " }}>

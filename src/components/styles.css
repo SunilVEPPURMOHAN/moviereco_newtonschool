@@ -63,10 +63,15 @@ h1 {
     font-weight: bold;
     margin-top: 1px;
     margin-bottom: 1px;
-    background-color:#7e0606;
+    background-color:#06045e;
 text-align: center;
 text-transform: capitalize;
 }
+h2{
+  color: #06045e;
+  font-style: oblique;
+}
+
 .Nav{
   text-align: center;
 }
@@ -81,5 +86,9 @@ text-transform: capitalize;
 #root{
   background-color: rgb(210, 230, 121);
   text-align: center;
+}
+
+.inputUser{
+  padding-bottom: 1%;
 }
 

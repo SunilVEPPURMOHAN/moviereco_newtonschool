@@ -76,5 +76,6 @@ text-transform: capitalize;
 
 .centerAlign{
   text-align: center;
+  background-color: rgb(225, 225, 238);
 }
 

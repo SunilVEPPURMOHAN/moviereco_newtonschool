@@ -15,7 +15,7 @@ const Movie = (props)=>{
     },[props.movie]);
     return(
     <div className="App" title={movie.Title}>  
-    <Container className='p-4 col-sm-12 col-lg-6' title={movie.Title}>  
+    <Container className='p-4 col-sm-12' title={movie.Title}>  
     <Card className="flex-fill" title={movie.Title}>
   <Card.Img variant="top" src={movie.Poster} title={movie.Title}/>  
   <Card.Body title={movie.Title}>  

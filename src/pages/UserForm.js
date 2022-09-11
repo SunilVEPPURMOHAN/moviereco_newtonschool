@@ -14,7 +14,7 @@ const UserForm = ()=>{
   const[genr,setGenr] = useState('Horror');
   const[searchlist,setSearchlist] = useState([]);
   const[movielist,setMovielist] = useState({Horror:[],Action:[],Drama:[],War:[],SciFiction:[]});
-  const[caution,setCaution] = useState('Click on a movie to populate your list');
+  const[caution,setCaution] = useState('Search & click movie to add to your list');
   const[user,setUser] = useState('user');
 
 useEffect(()=>{

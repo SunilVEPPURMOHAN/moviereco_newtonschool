@@ -56,3 +56,25 @@
   font-size: small;
   margin: 0.3rem;
 }
+h1 {
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    background-color:rgb(29, 2, 2);
+text-align: center;
+text-transform: capitalize;
+}
+.Nav{
+  text-align: center;
+}
+.inputBox{
+ text-align: center;
+}
+
+.centerAlign{
+  text-align: center;
+}
+

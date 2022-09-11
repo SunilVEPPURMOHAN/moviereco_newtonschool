@@ -5,6 +5,7 @@ import data from '../components/data/data';
 import Movie from "../components/Movie";
 import { useEffect } from "react";
 import Navb from "../components/Navb";
+import '../components/styles.css'
 
 
 const UserForm = ()=>{
@@ -44,10 +45,13 @@ useEffect(()=>{
   }
 
      return(<>
-     <Navb/>
-    <h1>{caution}</h1>
-      <input type="text" value={text} onChange={searchText} placeholder='Search your movie here'></input>
-      <label>Choose a Genre:
+     <div className="Nav"><Navb/></div>
+     <div className="inputBox">
+    <div className="centerAlign"><h1>{caution}</h1>
+      <input type="text" value={text} onChange={searchText} placeholder='Search your movie here' size={50}></input>
+      </div>
+      <br/>
+      <div className="centerAlign"><label>Choose a Genre:
   <select value={genr} onChange={(event)=>setGenr(event.target.value)}>
     <option value="Horror">Horror</option>
     <option value="Action">Action</option>
@@ -55,11 +59,10 @@ useEffect(()=>{
     <option value="War">War</option>
     <option value="SciFiction">SciFiction</option>
   </select>
-  </label>
-
+  </label></div>
   <input type="text" value={user} onChange={(event)=>setUser(event.target.value)} placeholder="type your user name here"></input>
   {/* <Button className="btn-success btn-outline-success my-2 my-sm-0"> <Link to={"/"+user}>All Yours! </Link></Button> */}
- 
+  </div>
 
   <div className="d-flex container-fluid" style={{flexWrap: "wrap", justifyContent: "space-around"}}>
       {searchlist.map((xxx) =>
